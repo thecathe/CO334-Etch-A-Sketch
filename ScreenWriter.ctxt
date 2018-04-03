@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=ScreenWriter
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ ScreenWriter\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=
+comment1.target=ScreenWriter()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ ScreenWriter\r\n
+comment2.params=img
+comment2.target=void\ writeToScreen(java.awt.image.BufferedImage)
+comment3.params=sketch
+comment3.target=void\ load(boolean[][])
+comment4.params=path
+comment4.target=java.awt.image.BufferedImage\ imageToEtch(java.lang.String)
+numComments=5
