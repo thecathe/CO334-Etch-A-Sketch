@@ -55,7 +55,7 @@ public class ScreenWriter
         int xr = Program.brushSize.getX();
         int yr = Program.brushSize.getY();
         System.out.println("load");
-        Program.Sleep(10);
+        Program.Sleep(40);
         for(int y = 0; y<32;y++){
             for(int x = 0; x < 128; x++){
                 if(sketch[x][y]){
