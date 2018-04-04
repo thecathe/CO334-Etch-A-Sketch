@@ -236,7 +236,7 @@ public class Program
                     galleryIndex++;
                     galleryUpdateScreen = true;
                     //(sketchNames.size() > 0 &&  gallerySketchIndex > 2 && gallerySketchIndex < sketchNames.size())
-                } else if (galleryIndex >= 2 && (sketchNames.size()-1) > galleryIndex){
+                } else if (galleryIndex >= 2 && (sketchNames.size() - 3) > gallerySketchIndex){
                     // if at the bottom of the screen, 
                     // move through the sketches list
                     System.out.println("- scroll down");
@@ -345,12 +345,12 @@ public class Program
             } else if (galleryUpdateScreen && !busyMBED){
                 System.out.println("gallery update");
                 // prints atleast the amount of sketches made
-                if (sketches.size() > 0){
+                if (sketches.size() > gallerySketchIndex){
                     Sleep(sleepTime);
                     lcd.print(0,1,sketchNames.get(gallerySketchIndex));
-                    if (sketches.size() > 1){
+                    if (sketches.size() > gallerySketchIndex+1){
                         lcd.print(0,11,sketchNames.get(gallerySketchIndex+1));
-                        if (sketches.size() > 2){
+                        if (sketches.size() > gallerySketchIndex+2){
                             lcd.print(0,21,sketchNames.get(gallerySketchIndex+2));
                         }
                     }
